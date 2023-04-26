@@ -3,6 +3,14 @@ body {
   background-color: #0b0c0ece;
 }
 
+.recording{
+  position: fixed;
+  top: 35%;
+  left: 1%;
+  width: 30%;
+  height: 35%;
+  border: 2px solid #0b0c0ece;
+}
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
@@ -40,12 +48,16 @@ body {
 }
 
 .btn {
-  margin: 25px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
-  border-radius: 20%;
+  height: 12rem;
+  width: 12rem;
+  border: 0.5rem solid black;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.btn:hover {
+  height: 12.5rem;
+  width: 12.5rem;
 }
 
 .game-over {
