@@ -20,6 +20,16 @@ $(document).keypress(function () {
   }
 });
 
+// for mobile devices
+// When any key is pressed or the screen is tapped, start the game
+$(document).on("keypress touchstart", function () {
+  if (!started) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+});
+
 // When any button with class "btn" is clicked, store its color and call functions to play sound and animate press
 $(".btn").click(function () {
   let userChosenColour = $(this).attr("id");
